@@ -19,7 +19,7 @@ class Car:
 
 if __name__ == "__main__":
     car1 = Car('Toyota', 4, 180)
-    car2 = Car('Subaru', 5, 200)
+    car2 = Car('Subaru', 5, 180)
 
     print(f"Количество мест в car1: {len(car1)}")
     print(f"Количество мест в car2: {len(car2)}")

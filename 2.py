@@ -31,7 +31,7 @@ class Bike(Vehicle):
 
     def move(self):
         print(f"Bike {self.brand} is cycling at {self.speed} km/h")
-
+        
     def __str__(self):
         return f"{super().__str__()}, Type: {self.type}"
 
