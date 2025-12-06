@@ -6,6 +6,7 @@ class Vehicle:
     def move(self):
         print(f"{self.brand} is moving.")
 
+
     def __str__(self):
         return f"Brand: {self.brand}, Speed: {self.speed} km/h"
 
@@ -14,6 +15,8 @@ class Car(Vehicle):
         super().__init__(brand, speed)
         self.seats = seats
 
+    def honk(self):
+        print("Beep beep!")
 
     def move(self):
         print(f"Car {self.brand} is driving at {self.speed} km/h")
@@ -35,6 +38,7 @@ class Bike(Vehicle):
 my_car = Car("Toyota", 5, 60)
 print(my_car)
 my_car.move()
+my_car.honk()
 
 v = Vehicle('ddd', 60)
 print(v)
